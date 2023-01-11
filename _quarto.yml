@@ -2,8 +2,8 @@ project:
   type: book
 
 book:
-  title: "notas_multivariado"
-  author: "Jane Doe"
+  title: "Análisis Multivariado"
+  author: "Freddy Hernández Barajas"
   date: "11/1/2023"
   chapters:
     - index.qmd
