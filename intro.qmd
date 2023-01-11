@@ -34,7 +34,17 @@ Se realizan varias excavaciones en tres regiones donde se tiene la evidencia que
 
 ## Tipos de variables
 
-![Ilustración](my_figs/tipos_variables.png){width=300}
+![Ilustración](my_figs/tipos_variables.png){width=600}
 
+## Matriz de diseño 
+La matriz de diseño se denota por $\boldsymbol{X}$ y es un arreglo de $n$ filas que representan los objetos o sujetos analizados con $p$ colmunas que representan las variables observadas.
+
+![Ilustración](my_figs/matriz_X.png){width=300}
+
+
+## Clasificación de los métodos multivariados
+
+
+![Ilustración](my_figs/metodos_multi.png){width=300}
 
 
