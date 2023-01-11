@@ -45,6 +45,6 @@ La matriz de diseño se denota por $\boldsymbol{X}$ y es un arreglo de $n$ filas
 ## Clasificación de los métodos multivariados
 
 
-![Ilustración](my_figs/metodos_multi.png){width=300}
+![Ilustración](my_figs/metodos_multi.png){width=600}
 
 
