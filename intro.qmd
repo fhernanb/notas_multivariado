@@ -11,4 +11,9 @@ See @knuth84 for additional discussion of literate programming.
 
 ## ¿En qué consiste el análisis multivariado?
 
+[![Ilustración](my_figs/pensando.png){width=300}](https://www.pngarts.com/es/explore/68232)
+
+## ¿En cuáles situaciones se usa el análisis multivariado?
+
+[![Ilustración](my_figs/personas_comprando.jpg){width=300}](https://www.freepik.es/vectores)
 
