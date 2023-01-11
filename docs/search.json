@@ -14,6 +14,20 @@
     "text": "1.1 ¿En qué consiste el análisis multivariado?\n\n\n\nIlustración"
   },
   {
+    "objectID": "intro.html#en-cuáles-situaciones-se-usa-el-análisis-multivariado",
+    "href": "intro.html#en-cuáles-situaciones-se-usa-el-análisis-multivariado",
+    "title": "1  Introducción",
+    "section": "1.2 ¿En cuáles situaciones se usa el análisis multivariado?",
+    "text": "1.2 ¿En cuáles situaciones se usa el análisis multivariado?\nLos conceptos de análisis multivariado se usan en muchas áreas, a continuación algunas de ellas con ejemplos ilustrativos.\n\n1.2.1 Mercadeo\nSe estudian seis características acerca de un producto percibidas por un grupo de consumidores, éstas son: calidad del producto, nivel de precio, velocidad de despacho o entrega, servicio, nivel de uso comparado con otros porductos sustitutos, nivel de satisfacción. Se quiere saber acerca de la incidencia, tanto individual como conjunta, de las variables anteriores en la decisión de compra del producto.\n\n\n\nIlustración\n\n\n\n\n1.2.2 Geología\nA lo largo de líneas transversales (en inglés “transects”) toman varias muestras del suelo para estudiar los contenidos (en porcentaje) de arena, azufre, magnesio, arcilla, materia orgánica y pH. También se miden otras variables físicas tales como estructura, humedad, conductividad eléctrica y permeabilidad. El objetivo es determinar las características más relevantes del suelo y hacer una clasificación de éstos.\n\n\n\nIlustración\n\n\n\n\n1.2.3 Arqueología\nSe realizan varias excavaciones en tres regiones donde se tiene la evidencia que habitaron comunidades indígeneas diferentes. Sobre los cráneos conseguidos se midió: la circunferencia, ancho máximo, altura máxima, altura nasal y longitud basialveolar. Esta información permitirá hacer comparaciones entre estas comunidades.\n\n\n\nIlustración"
+  },
+  {
+    "objectID": "intro.html#tipos-de-variables",
+    "href": "intro.html#tipos-de-variables",
+    "title": "1  Introducción",
+    "section": "1.3 Tipos de variables",
+    "text": "1.3 Tipos de variables\n\n\n\nIlustración\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
     "objectID": "summary.html",
     "href": "summary.html",
     "title": "2  Summary",
@@ -26,12 +40,5 @@
     "title": "References",
     "section": "",
     "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
-  },
-  {
-    "objectID": "intro.html#en-cuáles-situaciones-se-usa-el-análisis-multivariado",
-    "href": "intro.html#en-cuáles-situaciones-se-usa-el-análisis-multivariado",
-    "title": "1  Introducción",
-    "section": "1.2 ¿En cuáles situaciones se usa el análisis multivariado?",
-    "text": "1.2 ¿En cuáles situaciones se usa el análisis multivariado?\nLos conceptos de análisis multivariado se usan en muchas áreas, a continuación algunas de ellas con ejemplos ilustrativos.\n\n1.2.1 Mercadeo\nSe estudian seis características acerca de un producto percibidas por un grupo de consumidores, éstas son: calidad del producto, nivel de precio, velocidad de despacho o entrega, servicio, nivel de uso comparado con otros porductos sustitutos, nivel de satisfacción. Se quiere saber acerca de la incidencia, tanto individual como conjunta, de las variables anteriores en la decisión de compra del producto.\n\n\n\nIlustración\n\n\n\n\n1.2.2 Geología\nA lo largo de líneas transversales (en inglés “transects”) toman varias muestras del suelo para estudiar los contenidos (en porcentaje) de arena, azufre, magnesio, arcilla, materia orgánica y pH. También se miden otras variables físicas tales como estructura, humedad, conductividad eléctrica y permeabilidad. El objetivo es determinar las características más relevantes del suelo y hacer una clasificación de éstos.\n\n\n\nIlustración\n\n\n\n\n1.2.3 Arqueología\nSe realizan varias excavaciones en tres regiones donde se tiene la evidencia que habitaron comunidades indígeneas diferentes. Sobre los cráneos conseguidos se midió: la circunferencia, ancho máximo, altura máxima, altura nasal y longitud basialveolar. Esta información permitirá hacer comparaciones entre estas comunidades.\n\n\n\nIlustración\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   }
 ]
