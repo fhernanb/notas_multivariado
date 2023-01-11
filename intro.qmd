@@ -1,20 +1,10 @@
 # Introducción
-
-This is a book created from markdown and executable code.
-
-See @knuth84 for additional discussion of literate programming.
-
-```{r}
-1 + 1
-```
-
+En este capítulo se presentan algunos aspectos introductorios del análisis multivariado.
 
 ## ¿En qué consiste el análisis multivariado?
-
 [![Ilustración](my_figs/persona_pensando.jpg){width=300}](https://www.freepik.es/vectores)
 
 ## ¿En cuáles situaciones se usa el análisis multivariado?
-
 Los conceptos de análisis multivariado se usan en muchas áreas, a continuación algunas de ellas con ejemplos ilustrativos.
 
 ### Mercadeo
@@ -33,7 +23,7 @@ Se realizan varias excavaciones en tres regiones donde se tiene la evidencia que
 [![Ilustración](my_figs/arqueologia.png){width=300}](https://www.freepik.es/vectores)
 
 ## Tipos de variables
-
+En la siguiente figura se muestran los tipos de variables básicos.
 ![Ilustración](my_figs/tipos_variables.png){width=600}
 
 ## Matriz de diseño 
@@ -43,7 +33,7 @@ La matriz de diseño se denota por $\boldsymbol{X}$ y es un arreglo de $n$ filas
 
 
 ## Clasificación de los métodos multivariados
-
+En la siguiente figura se presentan los métodos multivariados tradicionales y una clasificación.
 
 ![Ilustración](my_figs/metodos_multi.png){width=600}
 

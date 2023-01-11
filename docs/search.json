@@ -25,7 +25,7 @@
     "href": "intro.html#tipos-de-variables",
     "title": "1  Introducción",
     "section": "1.3 Tipos de variables",
-    "text": "1.3 Tipos de variables\n\n\n\nIlustración"
+    "text": "1.3 Tipos de variables\nEn la siguiente figura se muestran los tipos de variables básicos."
   },
   {
     "objectID": "intro.html#matriz-de-diseño",
@@ -39,14 +39,14 @@
     "href": "intro.html#clasificación-de-los-métodos-multivariados",
     "title": "1  Introducción",
     "section": "1.5 Clasificación de los métodos multivariados",
-    "text": "1.5 Clasificación de los métodos multivariados\n\n\n\nIlustración\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+    "text": "1.5 Clasificación de los métodos multivariados\nEn la siguiente figura se presentan los métodos multivariados tradicionales y una clasificación.\n\n\n\nIlustración"
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
     "title": "2  Summary",
     "section": "",
-    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2\n\n\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   },
   {
     "objectID": "references.html",
