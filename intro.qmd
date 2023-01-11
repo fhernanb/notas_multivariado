@@ -11,9 +11,30 @@ See @knuth84 for additional discussion of literate programming.
 
 ## ¿En qué consiste el análisis multivariado?
 
-[![Ilustración](my_figs/pensando.png){width=300}](https://www.pngarts.com/es/explore/68232)
+[![Ilustración](my_figs/persona_pensando.jpg){width=300}](https://www.freepik.es/vectores)
 
 ## ¿En cuáles situaciones se usa el análisis multivariado?
 
+Los conceptos de análisis multivariado se usan en muchas áreas, a continuación algunas de ellas con ejemplos ilustrativos.
+
+### Mercadeo
+Se estudian seis características acerca de un producto percibidas por un grupo de consumidores, éstas son: calidad del producto, nivel de precio, velocidad de despacho o entrega, servicio, nivel de uso comparado con otros porductos sustitutos, nivel de satisfacción. Se quiere saber acerca de la incidencia, tanto individual como conjunta, de las variables anteriores en la decisión de compra del producto.
+
 [![Ilustración](my_figs/personas_comprando.jpg){width=300}](https://www.freepik.es/vectores)
+
+### Geología
+A lo largo de líneas transversales (en inglés “transects”) toman varias muestras del suelo para estudiar los contenidos (en porcentaje) de arena, azufre, magnesio, arcilla, materia orgánica y pH. También se miden otras variables físicas tales como estructura, humedad, conductividad eléctrica y permeabilidad. El objetivo es determinar las características más relevantes del suelo y hacer una clasificación de éstos.
+
+[![Ilustración](my_figs/capas_suelo.jpg){width=300}](https://www.freepik.es/vectores)
+
+### Arqueología
+Se realizan varias excavaciones en tres regiones donde se tiene la evidencia que habitaron comunidades indígeneas diferentes. Sobre los cráneos conseguidos se midió: la circunferencia, ancho máximo, altura máxima, altura nasal y longitud basialveolar. Esta información permitirá hacer comparaciones entre estas comunidades.
+
+[![Ilustración](my_figs/arqueologia.png){width=300}](https://www.freepik.es/vectores)
+
+## Tipos de variables
+
+![Ilustración](my_figs/tipos_variables.png){width=300}
+
+
 
