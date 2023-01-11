@@ -1,0 +1,142 @@
+# Componentes principales
+
+En los tiempos modernos es usual tener gran cantidad de datos y es necesario contar con herramientas para manejarlos.
+
+![Ilustración](my_figs/mar_datos.png){width=500}
+
+El análisis de componentes principales es una herramienta para reducir el numero de variables originales por nuevas variables o componentes "incorrelacionadas".
+
+![Ilustración](my_figs/reduction.png){width=500}
+
+En el caso de dos variables $X_1$ y $X_2$, las componentes principales ($PC_1$ y $PC_2$) corresponden a dos nuevas variables que son independientes (perpendiculares) entre ellas. A continuación una ilustración.
+
+![Ilustración](my_figs/objective_pca.png){width=400}
+
+## Details
+
+- Suppose $[X_{1}, X_{2}, \dots, X_{p}] = \boldsymbol{X}^\top$ is a set of $p$ random variables, with mean vector $\boldsymbol{\mu}$ and variance-covariance matrix $\boldsymbol{\Sigma}$.
+\vspace{0.5cm}
+- We want to define $p$ linear combinations of $\boldsymbol{X}^\top$ that represent the information in $\boldsymbol{X}^\top$ more parsimoniously.
+\vspace{0.5cm}
+- Specifically, find $\boldsymbol{a}_{1}, \ldots,  \boldsymbol{a}_{p}$ such that $\boldsymbol{a}_{1}^\top \boldsymbol{X}, \ldots, \boldsymbol{a}_{p}^\top \boldsymbol{X}$ gives the same information as $\boldsymbol{X}^\top$, but the new random variables, $\boldsymbol{a}_{1}^\top \boldsymbol{X}, \ldots, \boldsymbol{a}_{p}^\top \boldsymbol{X}$, are 'nicer'.
+- Suppose $[X_{1}, X_{2}, \dots, X_{p}] = \boldsymbol{X}^\top$ is a set of $p$ random variables, with mean vector $\boldsymbol{\mu}$ and variance-covariance matrix $\boldsymbol{\Sigma}$.
+\vspace{0.5cm}
+- We want to define $p$ linear combinations of $\boldsymbol{X}^\top$ that represent the information in $\boldsymbol{X}^\top$ more parsimoniously.
+\vspace{0.5cm}
+- Specifically, find $\boldsymbol{a}_{1}, \ldots,  \boldsymbol{a}_{p}$ such that $\boldsymbol{a}_{1}^\top \boldsymbol{X}, \ldots, \boldsymbol{a}_{p}^\top \boldsymbol{X}$ gives the same information as $\boldsymbol{X}^\top$, but the new random variables, $\boldsymbol{a}_{1}^\top \boldsymbol{X}, \ldots, \boldsymbol{a}_{p}^\top \boldsymbol{X}$, are 'nicer'.
+
+## Propiedades
+
+1) $Var(\boldsymbol{a}_{i}^\top \boldsymbol{X}) = \boldsymbol{a}_{i}^\top \boldsymbol \Sigma \boldsymbol{a}_{i} = \lambda_{i}$.
+\vspace{0.5cm}
+2) $\boldsymbol{a}_{i}$ and $\boldsymbol{a}_{j}$ are orthogonal, i.e., $\boldsymbol{a}_{i}^\top \boldsymbol{a}_{j} = 0$.
+\vspace{0.5cm}
+3) $Cov(\boldsymbol{a}_{i}^\top \boldsymbol{X}, \boldsymbol{a}_{j}^\top \boldsymbol{X}) = \boldsymbol{a}_{i}^\top \boldsymbol \Sigma \boldsymbol{a}_{j} = \boldsymbol{a}_{i}^\top \lambda_{j} \boldsymbol{a}_{j} = \lambda_{j}\boldsymbol{a}_{i}^\top \boldsymbol{a}_{j} = 0$.
+\vspace{0.5cm}
+4) $Tr(\boldsymbol \Sigma) = \lambda_{1} + \cdots + \lambda_{p}$ = sum of variances for all $p$ principal components, and for $X_{1}, \ldots, X_{p}$.
+\vspace{0.5cm}
+5) The importance of the $i^{th}$ principal component is $\lambda_{i}/Tr(\boldsymbol \Sigma)$.
+
+## Ejemplo
+Supongamos que tenemos dos variables cuantitativas $X_1$ y $X_2$ como se muestra a continuacion. Queremos encontrar un eje sobre el cual proyectar los puntos de tal manera que las sombras tengan la mayor variabilidad.
+
+```{r}
+mu <- c(0,0)                        # Mean
+Sigma <- matrix(c(1, 0.5,
+                  0.5, 1), ncol=2)  # Covariance matrix
+
+# Generate sample from N(mu, Sigma)
+library(MASS)
+dt <- mvrnorm(100, mu=mu, Sigma=Sigma)
+plot(dt, xlab=expression(x[1]), pch=19,
+     ylab=expression(x[2]))
+```
+
+Proyectando los puntos sobre los vectores $(1, 0)^\top$, $(0, 1)^\top$ y $(1/\sqrt{2}, 1/\sqrt{2})^\top$.
+
+```{r}
+par(mfrow=c(2, 2))
+
+plot(dt, xlab=expression(x[1]), ylab=expression(x[2]), pch=19)
+abline(h=0, col='red', lwd=3)
+abline(v=0, col='aquamarine4', lwd=3)
+abline(a=0, b=1/sqrt(2), col='blue', lwd=3)
+
+y <- dt %*% matrix(c(1, 0), nrow=2)
+plot(density(y), lwd=3, col='red',
+     main=paste('Var=', round(var(y),2)))
+rug(y)
+
+y <- dt %*% matrix(c(0, 1), nrow=2)
+plot(density(y), lwd=3, col='aquamarine4',
+     main=paste('Var=', round(var(y),2)))
+rug(y)
+
+y <- dt %*% matrix(c(1/sqrt(2), 1/sqrt(2)), nrow=2)
+plot(density(y), lwd=3, col='blue',
+     main=paste('Var=', round(var(y),2)))
+rug(y)
+```
+
+## Ejemplo
+A continuacion una base de datos sobre medidas corporales a 36 estudiantes de la universidad el año pasado.
+```{r}
+myurl <- 'https://raw.githubusercontent.com/fhernanb/datos/master/medidas_cuerpo'
+datos <- read.table(file=myurl, header=T, sep='')
+head(datos)
+```
+
+Vamos a crear varios diagramas de dispersión para mostrar la relación entre las variables.
+
+```{r}
+pairs(datos[, c('peso', 'altura', 'muneca', 'biceps')],
+      pch=19)
+```
+
+Vamos a calcular la matriz de varianzas y covarianzas sin incluir la variable sexo.
+
+```{r}
+dt <- datos[, c('peso', 'altura', 'muneca', 'biceps')]
+Sigma <- var(dt)
+Sigma
+sum(diag(Sigma))
+```
+
+Eigenvalores e eigenvectores de los datos.
+
+```{r}
+ei <- eigen(Sigma)
+ei
+sum(ei$values)
+```
+
+Eigenvalores e eigenvectores de los datos escalados.
+
+```{r}
+dt.s <- scale(dt)  # Datos escalados
+sum(apply(dt.s, MARGIN=2, FUN=var))
+ei <- eigen(var(dt.s))
+ei
+sum(ei$values)
+```
+
+PCA usando la funcion `princomp` de stats.
+
+```{r}
+mod <- prcomp(~ peso + altura + muneca + biceps,
+              data=datos, scale=TRUE)
+mod
+```
+
+Vamos a crear varios diagramas de dispersión para las variables escaladas.
+
+```{r}
+pairs(dt.s[, c('peso', 'altura', 'muneca', 'biceps')],
+      pch=19, col='tomato')
+```
+
+A continuación una tabla de resumen de la aplicación de las componentes principales.
+
+```{r}
+summary(mod)
+```
